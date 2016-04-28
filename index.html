@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bb-upload">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de Imagens</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="lib/ng-dialog/css/ngDialog.min.css" rel="stylesheet" type="text/css">
+    <link href="lib/ng-dialog/css/ngDialog-theme-default.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Photo Upload</h1>
+    <div ng-controller="imageCtrl">
+        <button class="btn btn-success" ng-click="upload()">Send Photos</button>
+    </div>
+
+
+    <hr>
+    <h1>Images</h1>
+    <div ng-controller="teste">
+        {{url}}
+
+
+    </div>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-file-upload/dist/angular-file-upload.min.js"></script>
+    <script src="lib/ng-dialog/js/ngDialog.min.js"></script>
+    <script src="dev/js/app.js"></script>
+    <script src="dev/js/services/files.js"></script>
+    <script src="dev/js/controllers/upload-controller.js"></script>
+
+</body>
+</html>
